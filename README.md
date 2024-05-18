@@ -39,13 +39,11 @@ func placeObject(named entityName: String, at location: CGPoint) {
     guard let raycastQuery = arView.makeRaycastQuery(from: location,
                                                      allowing: .estimatedPlane,
                                                      alignment: .horizontal) else {
-        print("레이캐스트 쿼리를 생성할 수 없습니다")
         return
     }
     
     // 레이캐스트를 수행합니다
     guard let raycastResult = arView.session.raycast(raycastQuery).first else {
-        print("감지된 표면이 없습니다")
         return
     }
     
