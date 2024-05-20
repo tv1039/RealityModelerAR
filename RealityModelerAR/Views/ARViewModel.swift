@@ -52,24 +52,7 @@ class ARViewModel: ObservableObject {
             }
         }
     }
-    
-    
-    // 카메라 화면 전환
-    func switchCamera() {
-        guard var newConfig = arView.session.configuration else {
-            fatalError("Unexpectedly failed to get the configuration.")
-        }
-        switch newConfig {
-        case is ARWorldTrackingConfiguration:
-            newConfig = ARFaceTrackingConfiguration()
-        case is ARFaceTrackingConfiguration:
-            newConfig = ARWorldTrackingConfiguration()
-            
-        default:
-            newConfig = ARWorldTrackingConfiguration()
-        }
-        arView.session.run(newConfig)
-    }
+
     
     // 사진촬영
     func snapshotAndSave() {
