@@ -26,20 +26,11 @@ struct ContentView : View {
             
             VStack {
                 HStack {
-                    Button {
+                    Spacer()
+                Button {
                         isSheetPresented = true
                     } label: {
                         Image(systemName: "plus")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 30, height: 30)
-                    }
-                    .padding()
-                    Spacer()
-                    Button {
-                        arViewModel.switchCamera()
-                    } label: {
-                        Image(systemName: "arrow.triangle.2.circlepath.camera")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30, height: 30)
