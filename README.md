@@ -6,7 +6,6 @@ RealityModelerAR은 SwiftUI와 RealityKit을 사용하여 AR 경험을 제공하
 ## Features
 - 간단 조작
 - 모델 선택 및 배치
-- 카메라 전환 기능
 - 스냅샷 캡처 및 저장
 
 ## Steps
