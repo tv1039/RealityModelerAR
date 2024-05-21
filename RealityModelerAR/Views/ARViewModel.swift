@@ -10,13 +10,13 @@ import RealityKit
 import ARKit
 
 class ARViewModel: ObservableObject {
-    var dataSource: DataSource
+    var dataSource: StorageDataSource
     @Published private var model : ARModel
     var arView: ARView {
         model.arView
     }
     
-    init(dataSource: DataSource, model: ARModel) {
+    init(dataSource: StorageDataSource, model: ARModel) {
         self.dataSource = dataSource
         self.model = model
     }
@@ -52,7 +52,6 @@ class ARViewModel: ObservableObject {
             }
         }
     }
-
     
     // 사진촬영
     func snapshotAndSave() {

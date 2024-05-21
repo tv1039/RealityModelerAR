@@ -2,19 +2,40 @@ import Foundation
 import FirebaseStorage
 import SwiftUI
 
-class DataSource: ObservableObject {
+class StorageDataSource: ObservableObject {
     // Get a reference to the storage service using the default Firebase App
     var storage: Storage
     var storageRef: StorageReference
-
+    
     @Published var pokemonImageURL: URL?
     @Published var pokemonUSDZURL: URL?
-    
+    @Published var pokemonNames: [String] = []
     
     init(pokemonName: String) {
-    print("DataSource 초기화")
+        print("DataSource 초기화")
         self.storage = Storage.storage()
         self.storageRef = storage.reference()
+        fetchPokemonNames()
+    }
+    
+    func fetchPokemonNames() {
+        storageRef.child("thumbnail").listAll { (result, error) in
+            if let error = error {
+                print("Error getting files: \(error)")
+            } else {
+                guard let result = result else {
+                    print("Error: result is nil")
+                    return
+                }
+
+                for item in result.items {
+                    let pokemonName = item.name.replacingOccurrences(of: ".png", with: "")
+                    DispatchQueue.main.async {
+                        self.pokemonNames.append(pokemonName)
+                    }
+                }
+            }
+        }
     }
     
     func getThumbnailURL(pokemonName: String, completion: @escaping (URL?) -> Void) {
@@ -29,7 +50,7 @@ class DataSource: ObservableObject {
             }
         }
     }
-
+    
     func downloadUSDZ(pokemonName: String, completion: @escaping (Result<URL, Error>) -> Void) {
         let pokemonRef = storageRef.child("Usdz/\(pokemonName).usdz")
         // 임시 디렉토리 경로를 생성합니다.

@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  RealityModelerAR
 //
-//  Created by 홍승표 on 5/16/24.
+//  Created by 홍승표 on 5/20/24.
 //
 
 import SwiftUI
@@ -27,7 +27,7 @@ struct ContentView : View {
             VStack {
                 HStack {
                     Spacer()
-                Button {
+                    Button {
                         isSheetPresented = true
                     } label: {
                         Image(systemName: "plus")
@@ -72,7 +72,7 @@ struct ARViewContainer: UIViewRepresentable {
 }
 
 #Preview {
-    ContentView(arViewModel: ARViewModel(dataSource: DataSource(pokemonName: "Pokemon001"),
+    ContentView(arViewModel: ARViewModel(dataSource: StorageDataSource(pokemonName: "Pokemon001"),
                                          model: ARModel(arView: ARView(frame: .zero)))
     )
 }

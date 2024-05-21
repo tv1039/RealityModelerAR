@@ -3,125 +3,143 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		357ECF512BF786A300D0BC95 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 357ECF502BF786A300D0BC95 /* FirebaseStorage */; };
-		357ECF532BF78CE700D0BC95 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357ECF522BF78CE700D0BC95 /* DataSource.swift */; };
-		357ECF562BF7967500D0BC95 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 357ECF552BF7967500D0BC95 /* SDWebImageSwiftUI */; };
-		35A110142BF614B400E0A71A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A110132BF614B400E0A71A /* AppDelegate.swift */; };
-		35A110162BF614B400E0A71A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A110152BF614B400E0A71A /* ContentView.swift */; };
-		35A110182BF614B600E0A71A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A110172BF614B600E0A71A /* Assets.xcassets */; };
-		35A1101B2BF614B600E0A71A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A1101A2BF614B600E0A71A /* Preview Assets.xcassets */; };
-		35A110222BF614CC00E0A71A /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A110212BF614CC00E0A71A /* ARModel.swift */; };
-		35A110242BF614DD00E0A71A /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A110232BF614DD00E0A71A /* ARViewModel.swift */; };
-		35A110602BF6551300E0A71A /* PokemonGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A1105F2BF6551300E0A71A /* PokemonGrid.swift */; };
-		35DC88EF2BF7358900441308 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DC88EE2BF7358900441308 /* PokemonModel.swift */; };
+		35CD80162BFB378500F30FCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CD80152BFB378500F30FCE /* Assets.xcassets */; };
+		35CD80192BFB378500F30FCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CD80182BFB378500F30FCE /* Preview Assets.xcassets */; };
+		35CD802D2BFB38F300F30FCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD802B2BFB38F300F30FCE /* ContentView.swift */; };
+		35CD80332BFB392F00F30FCE /* PokemonGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD80302BFB392F00F30FCE /* PokemonGrid.swift */; };
+		35CD80372BFB393400F30FCE /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD80352BFB393400F30FCE /* ARModel.swift */; };
+		35CD803B2BFB393F00F30FCE /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD80382BFB393F00F30FCE /* ARViewModel.swift */; };
+		35CD803E2BFB394400F30FCE /* StorageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD803D2BFB394400F30FCE /* StorageDataSource.swift */; };
+		35CD80412BFB395A00F30FCE /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 35CD80402BFB395A00F30FCE /* SDWebImageSwiftUI */; };
+		35CD80442BFB397900F30FCE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 35CD80432BFB397900F30FCE /* FirebaseStorage */; };
+		35CD80472BFB3A3B00F30FCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35CD80462BFB3A3B00F30FCE /* GoogleService-Info.plist */; };
+		35CD80492BFB3AF600F30FCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD80482BFB3AF600F30FCE /* AppDelegate.swift */; };
+		35CD804E2BFB3ECC00F30FCE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 35CD804D2BFB3ECC00F30FCE /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		357ECF522BF78CE700D0BC95 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		35A110102BF614B400E0A71A /* RealityModelerAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealityModelerAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		35A110132BF614B400E0A71A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		35A110152BF614B400E0A71A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		35A110172BF614B600E0A71A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		35A1101A2BF614B600E0A71A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		35A110212BF614CC00E0A71A /* ARModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
-		35A110232BF614DD00E0A71A /* ARViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
-		35A110252BF61ABA00E0A71A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		35A1105F2BF6551300E0A71A /* PokemonGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonGrid.swift; sourceTree = "<group>"; };
-		35DC88EE2BF7358900441308 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		35CD800E2BFB378400F30FCE /* RealityModelerAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealityModelerAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35CD80152BFB378500F30FCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35CD80182BFB378500F30FCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		35CD80272BFB38E500F30FCE /* RealityModelerAR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealityModelerAR-Bridging-Header.h"; sourceTree = "<group>"; };
+		35CD802B2BFB38F300F30FCE /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		35CD80302BFB392F00F30FCE /* PokemonGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonGrid.swift; sourceTree = "<group>"; };
+		35CD80352BFB393400F30FCE /* ARModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
+		35CD80382BFB393F00F30FCE /* ARViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
+		35CD803D2BFB394400F30FCE /* StorageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageDataSource.swift; sourceTree = "<group>"; };
+		35CD80462BFB3A3B00F30FCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		35CD80482BFB3AF600F30FCE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		35A1100D2BF614B400E0A71A /* Frameworks */ = {
+		35CD800B2BFB378400F30FCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				357ECF562BF7967500D0BC95 /* SDWebImageSwiftUI in Frameworks */,
-				357ECF512BF786A300D0BC95 /* FirebaseStorage in Frameworks */,
+				35CD80412BFB395A00F30FCE /* SDWebImageSwiftUI in Frameworks */,
+				35CD80442BFB397900F30FCE /* FirebaseStorage in Frameworks */,
+				35CD804E2BFB3ECC00F30FCE /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		35246C022BF73A850020E4BC /* Models */ = {
+		35CD80052BFB378400F30FCE = {
 			isa = PBXGroup;
 			children = (
-				35A110212BF614CC00E0A71A /* ARModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		35246C032BF73A8B0020E4BC /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				35A110232BF614DD00E0A71A /* ARViewModel.swift */,
-				35A110152BF614B400E0A71A /* ContentView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		35246C042BF73AA10020E4BC /* PockemonViews */ = {
-			isa = PBXGroup;
-			children = (
-				35DC88EE2BF7358900441308 /* PokemonModel.swift */,
-				35A1105F2BF6551300E0A71A /* PokemonGrid.swift */,
-			);
-			path = PockemonViews;
-			sourceTree = "<group>";
-		};
-		35A110072BF614B400E0A71A = {
-			isa = PBXGroup;
-			children = (
-				35A110122BF614B400E0A71A /* RealityModelerAR */,
-				35A110112BF614B400E0A71A /* Products */,
+				35CD80102BFB378400F30FCE /* RealityModelerAR */,
+				35CD800F2BFB378400F30FCE /* Products */,
+				35CD804C2BFB3ECC00F30FCE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		35A110112BF614B400E0A71A /* Products */ = {
+		35CD800F2BFB378400F30FCE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				35A110102BF614B400E0A71A /* RealityModelerAR.app */,
+				35CD800E2BFB378400F30FCE /* RealityModelerAR.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		35A110122BF614B400E0A71A /* RealityModelerAR */ = {
+		35CD80102BFB378400F30FCE /* RealityModelerAR */ = {
 			isa = PBXGroup;
 			children = (
-				35A110252BF61ABA00E0A71A /* Info.plist */,
-				35A110132BF614B400E0A71A /* AppDelegate.swift */,
-				357ECF522BF78CE700D0BC95 /* DataSource.swift */,
-				35246C022BF73A850020E4BC /* Models */,
-				35246C032BF73A8B0020E4BC /* Views */,
-				35246C042BF73AA10020E4BC /* PockemonViews */,
-				35A110172BF614B600E0A71A /* Assets.xcassets */,
-				35A110192BF614B600E0A71A /* Preview Content */,
+				35CD80462BFB3A3B00F30FCE /* GoogleService-Info.plist */,
+				35CD80482BFB3AF600F30FCE /* AppDelegate.swift */,
+				35CD80452BFB39F300F30FCE /* DataSource */,
+				35CD80362BFB393400F30FCE /* Models */,
+				35CD803A2BFB393F00F30FCE /* Views */,
+				35CD80322BFB392F00F30FCE /* PockemonViews */,
+				35CD80152BFB378500F30FCE /* Assets.xcassets */,
+				35CD80172BFB378500F30FCE /* Preview Content */,
+				35CD80272BFB38E500F30FCE /* RealityModelerAR-Bridging-Header.h */,
 			);
 			path = RealityModelerAR;
 			sourceTree = "<group>";
 		};
-		35A110192BF614B600E0A71A /* Preview Content */ = {
+		35CD80172BFB378500F30FCE /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				35A1101A2BF614B600E0A71A /* Preview Assets.xcassets */,
+				35CD80182BFB378500F30FCE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		35CD80322BFB392F00F30FCE /* PockemonViews */ = {
+			isa = PBXGroup;
+			children = (
+				35CD80302BFB392F00F30FCE /* PokemonGrid.swift */,
+			);
+			path = PockemonViews;
+			sourceTree = "<group>";
+		};
+		35CD80362BFB393400F30FCE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				35CD80352BFB393400F30FCE /* ARModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		35CD803A2BFB393F00F30FCE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35CD80382BFB393F00F30FCE /* ARViewModel.swift */,
+				35CD802B2BFB38F300F30FCE /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		35CD80452BFB39F300F30FCE /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				35CD803D2BFB394400F30FCE /* StorageDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		35CD804C2BFB3ECC00F30FCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		35A1100F2BF614B400E0A71A /* RealityModelerAR */ = {
+		35CD800D2BFB378400F30FCE /* RealityModelerAR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35A1101E2BF614B600E0A71A /* Build configuration list for PBXNativeTarget "RealityModelerAR" */;
+			buildConfigurationList = 35CD801C2BFB378500F30FCE /* Build configuration list for PBXNativeTarget "RealityModelerAR" */;
 			buildPhases = (
-				35A1100C2BF614B400E0A71A /* Sources */,
-				35A1100D2BF614B400E0A71A /* Frameworks */,
-				35A1100E2BF614B400E0A71A /* Resources */,
+				35CD800A2BFB378400F30FCE /* Sources */,
+				35CD800B2BFB378400F30FCE /* Frameworks */,
+				35CD800C2BFB378400F30FCE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -129,81 +147,83 @@
 			);
 			name = RealityModelerAR;
 			packageProductDependencies = (
-				357ECF502BF786A300D0BC95 /* FirebaseStorage */,
-				357ECF552BF7967500D0BC95 /* SDWebImageSwiftUI */,
+				35CD80402BFB395A00F30FCE /* SDWebImageSwiftUI */,
+				35CD80432BFB397900F30FCE /* FirebaseStorage */,
+				35CD804D2BFB3ECC00F30FCE /* FirebaseFirestore */,
 			);
-			productName = ARCamera;
-			productReference = 35A110102BF614B400E0A71A /* RealityModelerAR.app */;
+			productName = RealityModelerAR;
+			productReference = 35CD800E2BFB378400F30FCE /* RealityModelerAR.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		35A110082BF614B400E0A71A /* Project object */ = {
+		35CD80062BFB378400F30FCE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					35A1100F2BF614B400E0A71A = {
+					35CD800D2BFB378400F30FCE = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
-			buildConfigurationList = 35A1100B2BF614B400E0A71A /* Build configuration list for PBXProject "RealityModelerAR" */;
-			compatibilityVersion = "Xcode 15.3";
+			buildConfigurationList = 35CD80092BFB378400F30FCE /* Build configuration list for PBXProject "RealityModelerAR" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 35A110072BF614B400E0A71A;
+			mainGroup = 35CD80052BFB378400F30FCE;
 			packageReferences = (
-				357ECF4F2BF786A300D0BC95 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				357ECF542BF7967500D0BC95 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				35CD803F2BFB395A00F30FCE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				35CD80422BFB397900F30FCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
-			productRefGroup = 35A110112BF614B400E0A71A /* Products */;
+			productRefGroup = 35CD800F2BFB378400F30FCE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				35A1100F2BF614B400E0A71A /* RealityModelerAR */,
+				35CD800D2BFB378400F30FCE /* RealityModelerAR */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		35A1100E2BF614B400E0A71A /* Resources */ = {
+		35CD800C2BFB378400F30FCE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35A1101B2BF614B600E0A71A /* Preview Assets.xcassets in Resources */,
-				35A110182BF614B600E0A71A /* Assets.xcassets in Resources */,
+				35CD80192BFB378500F30FCE /* Preview Assets.xcassets in Resources */,
+				35CD80472BFB3A3B00F30FCE /* GoogleService-Info.plist in Resources */,
+				35CD80162BFB378500F30FCE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		35A1100C2BF614B400E0A71A /* Sources */ = {
+		35CD800A2BFB378400F30FCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				357ECF532BF78CE700D0BC95 /* DataSource.swift in Sources */,
-				35A110222BF614CC00E0A71A /* ARModel.swift in Sources */,
-				35DC88EF2BF7358900441308 /* PokemonModel.swift in Sources */,
-				35A110162BF614B400E0A71A /* ContentView.swift in Sources */,
-				35A110142BF614B400E0A71A /* AppDelegate.swift in Sources */,
-				35A110242BF614DD00E0A71A /* ARViewModel.swift in Sources */,
-				35A110602BF6551300E0A71A /* PokemonGrid.swift in Sources */,
+				35CD80492BFB3AF600F30FCE /* AppDelegate.swift in Sources */,
+				35CD80332BFB392F00F30FCE /* PokemonGrid.swift in Sources */,
+				35CD802D2BFB38F300F30FCE /* ContentView.swift in Sources */,
+				35CD803B2BFB393F00F30FCE /* ARViewModel.swift in Sources */,
+				35CD803E2BFB394400F30FCE /* StorageDataSource.swift in Sources */,
+				35CD80372BFB393400F30FCE /* ARModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		35A1101C2BF614B600E0A71A /* Debug */ = {
+		35CD801A2BFB378500F30FCE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,7 +286,7 @@
 			};
 			name = Debug;
 		};
-		35A1101D2BF614B600E0A71A /* Release */ = {
+		35CD801B2BFB378500F30FCE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -322,20 +342,19 @@
 			};
 			name = Release;
 		};
-		35A1101F2BF614B600E0A71A /* Debug */ = {
+		35CD801D2BFB378500F30FCE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RealityModelerAR/Preview Content\"";
 				DEVELOPMENT_TEAM = FCADUC32VH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ARCamera/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -350,25 +369,26 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seung.RealityModelerAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RealityModelerAR/RealityModelerAR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		35A110202BF614B600E0A71A /* Release */ = {
+		35CD801E2BFB378500F30FCE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RealityModelerAR/Preview Content\"";
 				DEVELOPMENT_TEAM = FCADUC32VH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ARCamera/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -383,6 +403,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seung.RealityModelerAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RealityModelerAR/RealityModelerAR-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -391,20 +412,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		35A1100B2BF614B400E0A71A /* Build configuration list for PBXProject "RealityModelerAR" */ = {
+		35CD80092BFB378400F30FCE /* Build configuration list for PBXProject "RealityModelerAR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				35A1101C2BF614B600E0A71A /* Debug */,
-				35A1101D2BF614B600E0A71A /* Release */,
+				35CD801A2BFB378500F30FCE /* Debug */,
+				35CD801B2BFB378500F30FCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35A1101E2BF614B600E0A71A /* Build configuration list for PBXNativeTarget "RealityModelerAR" */ = {
+		35CD801C2BFB378500F30FCE /* Build configuration list for PBXNativeTarget "RealityModelerAR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				35A1101F2BF614B600E0A71A /* Debug */,
-				35A110202BF614B600E0A71A /* Release */,
+				35CD801D2BFB378500F30FCE /* Debug */,
+				35CD801E2BFB378500F30FCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -412,15 +433,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		357ECF4F2BF786A300D0BC95 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.26.0;
-			};
-		};
-		357ECF542BF7967500D0BC95 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+		35CD803F2BFB395A00F30FCE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
 			requirement = {
@@ -428,20 +441,33 @@
 				minimumVersion = 3.0.4;
 			};
 		};
+		35CD80422BFB397900F30FCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.26.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		357ECF502BF786A300D0BC95 /* FirebaseStorage */ = {
+		35CD80402BFB395A00F30FCE /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 357ECF4F2BF786A300D0BC95 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 35CD803F2BFB395A00F30FCE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		35CD80432BFB397900F30FCE /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35CD80422BFB397900F30FCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
 		};
-		357ECF552BF7967500D0BC95 /* SDWebImageSwiftUI */ = {
+		35CD804D2BFB3ECC00F30FCE /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 357ECF542BF7967500D0BC95 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
+			package = 35CD80422BFB397900F30FCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 35A110082BF614B400E0A71A /* Project object */;
+	rootObject = 35CD80062BFB378400F30FCE /* Project object */;
 }

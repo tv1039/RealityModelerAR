@@ -9,9 +9,9 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct PokemonGrid: View {
-    @EnvironmentObject var dataSource: DataSource
+    @EnvironmentObject var dataSource: StorageDataSource
     var columns = Array(repeating: GridItem(.flexible()), count: 3)
-    @State private var pokemonNames = PokemonModel.pokemonNames
+
     @State private var imageUrls = [String: URL]()
     @Binding var selectedPokemon: String?
     @Binding var isSheetPresented: Bool
@@ -19,7 +19,7 @@ struct PokemonGrid: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns) {
-                ForEach(pokemonNames, id: \.self) { pokemon in
+                ForEach(dataSource.pokemonNames, id: \.self) { pokemon in
                     if let url = imageUrls[pokemon] {
                         WebImage(url: url)
                             .resizable()
