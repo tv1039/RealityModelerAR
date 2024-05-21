@@ -29,24 +29,28 @@ RealityModelerAR은 SwiftUI와 RealityKit을 사용하여 AR 경험을 제공하
 ## 이미지 캐싱
 - SDWebImageSwiftUI를 활용하여 효율적인 이미지 캐싱과 빠른 로딩을 구현합니다.
 
-## Code Example
-사용자가 시트에서 선택한 썸네일 이미지와 동일한 이름을 가진 USDZ 파일을 AR 뷰에서 </br>
-레이캐스팅을 통해 감지된 평면 위에 정확하게 배치할 수 있도록 하였습니다.
+## 객체 생성
+사용자가 시트에서 선택한 썸네일 이미지와 동일한 이름을 가진 .usdz 소스(3D 모델)을 </br>
+사용자의 터치 지점을 실제 세계의 위치로 변환하고, 그 위치에 가장 가까운 평면을 감지하는 데 사용되는 `raycast`을 통해 </br>
+감지된 View의 평면 위로 정확하게 배치할 수 있도록 하였습니다.
+
+### Code Example
+
 ```swift
 func placeObject(named entityName: String, at location: CGPoint) {
-    // 터치 위치에서 레이캐스트 쿼리를 생성합니다
+    // 터치 위치에서 raycast 쿼리를 생성합니다
     guard let raycastQuery = arView.makeRaycastQuery(from: location,
                                                      allowing: .estimatedPlane,
                                                      alignment: .horizontal) else {
         return
     }
     
-    // 레이캐스트를 수행합니다
+    // raycast를 수행합니다
     guard let raycastResult = arView.session.raycast(raycastQuery).first else {
         return
     }
     
-    // 레이캐스트 결과에서 앵커 엔티티를 생성합니다
+    // raycast 결과에서 앵커 엔티티를 생성합니다
     let anchorEntity = AnchorEntity(raycastResult: raycastResult)
     
     // USDZ 파일을 다운로드하고 엔티티를 배치합니다
@@ -56,3 +60,29 @@ func placeObject(named entityName: String, at location: CGPoint) {
 }
 
 ```
+## Firebase Storage에서 이미지 파일 불러오기
+
+Firebase Storage에 저장된 모든 이미지 파일을 불러오는 기능을 추가하였습니다. 이를 통해 개발자가 직접 데이터를 추가할 필요 없이 Firebase Storage에 있는 이미지 파일을 모두 불러올 수 있습니다.
+
+### Code Example
+```swift
+func fetchPokemonNames() {
+    storageRef.child("thumbnail").listAll { (result, error) in
+        if let error = error {
+            print("Error getting files: \(error)")
+        } else {
+            guard let result = result else {
+                print("Error: result is nil")
+                return
+            }
+
+            for item in result.items {
+                let pokemonName = item.name.replacingOccurrences(of: ".png", with: "")
+                DispatchQueue.main.async {
+                    self.pokemonNames.append(pokemonName)
+                }
+            }
+        }
+    }
+}
+
