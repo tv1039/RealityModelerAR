@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35B4AB852C131E660085CBC1 /* ImageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4AB842C131E660085CBC1 /* ImageStyle.swift */; };
+		35B4AB8A2C133DC60085CBC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4AB872C133DC60085CBC1 /* ContentView.swift */; };
+		35B4AB8B2C133DC60085CBC1 /* ImageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4AB882C133DC60085CBC1 /* ImageStyle.swift */; };
+		35B4AB8C2C133DC60085CBC1 /* PokemonGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4AB892C133DC60085CBC1 /* PokemonGrid.swift */; };
 		35CD80162BFB378500F30FCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CD80152BFB378500F30FCE /* Assets.xcassets */; };
 		35CD80192BFB378500F30FCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CD80182BFB378500F30FCE /* Preview Assets.xcassets */; };
-		35CD802D2BFB38F300F30FCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD802B2BFB38F300F30FCE /* ContentView.swift */; };
-		35CD80332BFB392F00F30FCE /* PokemonGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD80302BFB392F00F30FCE /* PokemonGrid.swift */; };
 		35CD80372BFB393400F30FCE /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD80352BFB393400F30FCE /* ARModel.swift */; };
 		35CD803B2BFB393F00F30FCE /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD80382BFB393F00F30FCE /* ARViewModel.swift */; };
 		35CD803E2BFB394400F30FCE /* StorageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD803D2BFB394400F30FCE /* StorageDataSource.swift */; };
@@ -23,13 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		35B4AB842C131E660085CBC1 /* ImageStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStyle.swift; sourceTree = "<group>"; };
+		35B4AB872C133DC60085CBC1 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		35B4AB882C133DC60085CBC1 /* ImageStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStyle.swift; sourceTree = "<group>"; };
+		35B4AB892C133DC60085CBC1 /* PokemonGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonGrid.swift; sourceTree = "<group>"; };
 		35CD800E2BFB378400F30FCE /* RealityModelerAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealityModelerAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CD80152BFB378500F30FCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35CD80182BFB378500F30FCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		35CD80272BFB38E500F30FCE /* RealityModelerAR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealityModelerAR-Bridging-Header.h"; sourceTree = "<group>"; };
-		35CD802B2BFB38F300F30FCE /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		35CD80302BFB392F00F30FCE /* PokemonGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonGrid.swift; sourceTree = "<group>"; };
 		35CD80352BFB393400F30FCE /* ARModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
 		35CD80382BFB393F00F30FCE /* ARViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
 		35CD803D2BFB394400F30FCE /* StorageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageDataSource.swift; sourceTree = "<group>"; };
@@ -84,7 +84,6 @@
 				35CD80452BFB39F300F30FCE /* DataSource */,
 				35CD80362BFB393400F30FCE /* Models */,
 				35CD803A2BFB393F00F30FCE /* Views */,
-				35CD80322BFB392F00F30FCE /* PockemonViews */,
 				35CD80152BFB378500F30FCE /* Assets.xcassets */,
 				35CD80172BFB378500F30FCE /* Preview Content */,
 				35CD80272BFB38E500F30FCE /* RealityModelerAR-Bridging-Header.h */,
@@ -100,14 +99,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		35CD80322BFB392F00F30FCE /* PockemonViews */ = {
-			isa = PBXGroup;
-			children = (
-				35CD80302BFB392F00F30FCE /* PokemonGrid.swift */,
-			);
-			path = PockemonViews;
-			sourceTree = "<group>";
-		};
 		35CD80362BFB393400F30FCE /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,8 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				35B4AB832C131C830085CBC1 /* ViewModel */,
-				35CD802B2BFB38F300F30FCE /* ContentView.swift */,
-				35B4AB842C131E660085CBC1 /* ImageStyle.swift */,
+				35B4AB872C133DC60085CBC1 /* ContentView.swift */,
+				35B4AB882C133DC60085CBC1 /* ImageStyle.swift */,
+				35B4AB892C133DC60085CBC1 /* PokemonGrid.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,10 +215,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				35CD80492BFB3AF600F30FCE /* AppDelegate.swift in Sources */,
-				35CD80332BFB392F00F30FCE /* PokemonGrid.swift in Sources */,
-				35CD802D2BFB38F300F30FCE /* ContentView.swift in Sources */,
+				35B4AB8A2C133DC60085CBC1 /* ContentView.swift in Sources */,
 				35CD803B2BFB393F00F30FCE /* ARViewModel.swift in Sources */,
-				35B4AB852C131E660085CBC1 /* ImageStyle.swift in Sources */,
+				35B4AB8B2C133DC60085CBC1 /* ImageStyle.swift in Sources */,
+				35B4AB8C2C133DC60085CBC1 /* PokemonGrid.swift in Sources */,
 				35CD803E2BFB394400F30FCE /* StorageDataSource.swift in Sources */,
 				35CD80372BFB393400F30FCE /* ARModel.swift in Sources */,
 			);
