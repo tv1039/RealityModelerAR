@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35B4AB852C131E660085CBC1 /* ImageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4AB842C131E660085CBC1 /* ImageStyle.swift */; };
 		35CD80162BFB378500F30FCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CD80152BFB378500F30FCE /* Assets.xcassets */; };
 		35CD80192BFB378500F30FCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CD80182BFB378500F30FCE /* Preview Assets.xcassets */; };
 		35CD802D2BFB38F300F30FCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD802B2BFB38F300F30FCE /* ContentView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35B4AB842C131E660085CBC1 /* ImageStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStyle.swift; sourceTree = "<group>"; };
 		35CD800E2BFB378400F30FCE /* RealityModelerAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealityModelerAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CD80152BFB378500F30FCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35CD80182BFB378500F30FCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35B4AB832C131C830085CBC1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				35CD80382BFB393F00F30FCE /* ARViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		35CD80052BFB378400F30FCE = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +119,9 @@
 		35CD803A2BFB393F00F30FCE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				35CD80382BFB393F00F30FCE /* ARViewModel.swift */,
+				35B4AB832C131C830085CBC1 /* ViewModel */,
 				35CD802B2BFB38F300F30FCE /* ContentView.swift */,
+				35B4AB842C131E660085CBC1 /* ImageStyle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,6 +226,7 @@
 				35CD80332BFB392F00F30FCE /* PokemonGrid.swift in Sources */,
 				35CD802D2BFB38F300F30FCE /* ContentView.swift in Sources */,
 				35CD803B2BFB393F00F30FCE /* ARViewModel.swift in Sources */,
+				35B4AB852C131E660085CBC1 /* ImageStyle.swift in Sources */,
 				35CD803E2BFB394400F30FCE /* StorageDataSource.swift in Sources */,
 				35CD80372BFB393400F30FCE /* ARModel.swift in Sources */,
 			);
@@ -355,6 +367,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -389,6 +402,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;

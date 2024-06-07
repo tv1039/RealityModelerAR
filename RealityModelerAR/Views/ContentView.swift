@@ -9,6 +9,12 @@ import SwiftUI
 import RealityKit
 import SDWebImageSwiftUI
 
+enum ButtonObjc: String {
+    case addObject = "plus.viewfinder"
+    case undoObject = "arrow.uturn.backward.circle"
+    case resetObject = "arrow.counterclockwise.circle"
+}
+
 struct ContentView : View {
     @StateObject var arViewModel: ARViewModel
     @State private var isSheetPresented = false
@@ -23,37 +29,67 @@ struct ContentView : View {
                         arViewModel.placeObject(named: pokemon, for: location)
                     }
                 }
-            
             VStack {
                 HStack {
                     Spacer()
-                    Button {
-                        isSheetPresented = true
-                    } label: {
-                        Image(systemName: "plus")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 30, height: 30)
+                    VStack {
+                        Image(systemName: ButtonObjc.addObject.rawValue)
+                            .imageStyle()
+                            .onTapGesture {
+                                handleButtonTap(.addObject)
+                            }
+                        Image(systemName: ButtonObjc.undoObject.rawValue)
+                            .imageStyle()
+                            .onTapGesture {
+                                handleButtonTap(.undoObject)
+                            }
+                        Image(systemName: ButtonObjc.resetObject.rawValue)
+                            .imageStyle()
+                            .onTapGesture {
+                                handleButtonTap(.resetObject)
+                            }
                     }
+                    .background(Color.black.opacity(0.5))
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+#if os(iOS)
+                    .scaleEffect(0.7)
+                    .padding(0)
+#else
+                    .scaleEffect(1)
                     .padding()
+#endif
+                    
                 }
                 Spacer()
+                    .sheet(isPresented: $isSheetPresented) {
+                        PokemonGrid(selectedPokemon: $selectedPokemon, isSheetPresented: $isSheetPresented)
+                            .presentationDetents([.medium])
+                    }
             }
-            .sheet(isPresented: $isSheetPresented) {
-                PokemonGrid(selectedPokemon: $selectedPokemon, isSheetPresented: $isSheetPresented)
-                    .presentationDetents([.medium])
-            }
-            
             VStack {
                 Spacer()
                 Button {
                     arViewModel.snapshotAndSave()
                 } label: {
-                    Circle()
+                    Image(systemName: "camera.circle.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
                         .frame(width: 60, height: 60)
                         .padding()
                 }
+                .tint(.primary)
             }
+        }
+    }
+    
+    func handleButtonTap(_ button: ButtonObjc) {
+        switch button {
+        case .addObject:
+            isSheetPresented = true
+        case .undoObject:
+            arViewModel.removeLastObject()
+        case .resetObject:
+            arViewModel.resetScene()
         }
     }
 }

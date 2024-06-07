@@ -21,7 +21,6 @@ class ARViewModel: ObservableObject {
         self.model = model
     }
     
-    // 객체 평면에 놓기
     func placeObject(named entityName: String, for location: CGPoint) {
         let raycastQuery = arView.makeRaycastQuery(from: location,
                                                    allowing: .estimatedPlane,
@@ -53,7 +52,16 @@ class ARViewModel: ObservableObject {
         }
     }
     
-    // 사진촬영
+    func resetScene() {
+        arView.scene.anchors.removeAll()
+    }
+    
+    func removeLastObject() {
+        if let lastAnchor = arView.scene.anchors.compactMap({ $0 }).last {
+            arView.scene.removeAnchor(lastAnchor)
+        }
+    }
+    
     func snapshotAndSave() {
         arView.snapshot(saveToHDR: false) { image in
             guard let image = image else {

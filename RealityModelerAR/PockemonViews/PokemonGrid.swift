@@ -18,6 +18,10 @@ struct PokemonGrid: View {
     
     var body: some View {
         ScrollView {
+            Text("원하는 모델을 골라주세요.")
+                .font(.title3)
+                .padding(.top, 20)
+            
             LazyVGrid(columns: columns) {
                 ForEach(dataSource.pokemonNames, id: \.self) { pokemon in
                     if let url = imageUrls[pokemon] {
