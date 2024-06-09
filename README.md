@@ -60,7 +60,7 @@ func placeObject(named entityName: String, at location: CGPoint) {
 }
 
 ```
-## Firebase Storage에서 이미지 및 3D 겍체 모델을 다운로드합니다.
+## Firebase Storage에서 이미지 및 3D 겍체 모델을 다운로드합니다.
 
 Firebase Storage에 저장된 모든 이미지 파일을 불러오는 기능을 추가하였습니다. 이를 통해 개발자가 직접 데이터를 추가할 필요 없이 Firebase Storage에 있는 이미지 파일을 모두 불러올 수 있습니다.
 
