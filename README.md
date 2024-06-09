@@ -39,9 +39,7 @@ RealityModelerAR은 SwiftUI와 RealityKit을 사용하여 AR 경험을 제공하
 ```swift
 func placeObject(named entityName: String, at location: CGPoint) {
     // 터치 위치에서 raycast 쿼리를 생성합니다
-    guard let raycastQuery = arView.makeRaycastQuery(from: location,
-                                                     allowing: .estimatedPlane,
-                                                     alignment: .horizontal) else {
+    guard let raycastQuery = arView.makeRaycastQuery(from: location, allowing: .estimatedPlane, alignment: .horizontal) else {
         return
     }
     
