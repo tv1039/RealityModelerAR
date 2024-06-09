@@ -60,7 +60,7 @@ func placeObject(named entityName: String, at location: CGPoint) {
 }
 
 ```
-## Firebase Storage에서 이미지 파일 불러오기
+## Firebase Storage에서 이미지 및 3D 겍체 모델을 다운로드합니다.
 
 Firebase Storage에 저장된 모든 이미지 파일을 불러오는 기능을 추가하였습니다. 이를 통해 개발자가 직접 데이터를 추가할 필요 없이 Firebase Storage에 있는 이미지 파일을 모두 불러올 수 있습니다.
 
@@ -85,4 +85,19 @@ func fetchPokemonNames() {
         }
     }
 }
+
+    func downloadUSDZ(pokemonName: String, completion: @escaping (Result<URL, Error>) -> Void) {
+        let pokemonRef = storageRef.child("Usdz/\(pokemonName).usdz")
+        let localURL = FileManager.default.temporaryDirectory.appendingPathComponent("\(pokemonName).usdz")
+        
+        pokemonRef.write(toFile: localURL) { url, error in
+            if let error = error {
+              print("Error getting Models: \(error)")
+                completion(.failure(error))
+            } else if let url = url {
+                print("Success getting Models: \(url)")
+                completion(.success(url))
+            }
+        }
+    }
 
