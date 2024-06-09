@@ -100,4 +100,14 @@ func fetchPokemonNames() {
             }
         }
     }
+```
+### ScreenShot
+<img src = "https://github.com/tv1039/RealityModelerAR/assets/62321931/1d3864de-5b82-4c98-8053-48ca6271db80" width = "200px"> 
+<img src = "https://github.com/tv1039/RealityModelerAR/assets/62321931/965f4903-b9a4-4d55-8483-d1e33a0d6218" width = "200px"> 
+
+- 사용자가 객체를 평면에 자유롭게 제한 없이 배치할 수 있습니다.
+- 두번째 사진은 우측 상단에 세 가지 버튼을 이용하여 객체 배치, 이전 상태 되돌리기, 전체 초기화를 결정할 수 있습니다.
+
+
+
 
