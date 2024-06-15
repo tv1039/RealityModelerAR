@@ -99,9 +99,11 @@ func fetchPokemonNames() {
 
 ### Used Technologies
 - `SwiftUI`
+- `Combine`
 - `ARKit`
 - `RealityKit`
 - `Firebase`
+  
 ### Used Libraries
 - `SDWebImageSwiftUI`
 
