@@ -26,9 +26,6 @@ RealityModelerAR은 SwiftUI와 RealityKit을 사용하여 AR 경험을 제공하
 - ARView의 `snapshot()` 메서드를 사용하여 현재 AR 화면의 스냅샷을 생성합니다.
 - 생성된 스냅샷을 사용자의 사진 라이브러리에 저장하거나 공유할 수 있도록 기능을 추가합니다.
 
-## 이미지 캐싱
-- SDWebImageSwiftUI를 활용하여 효율적인 이미지 캐싱과 빠른 로딩을 구현합니다.
-
 ## 객체 생성
 사용자가 시트에서 선택한 썸네일 이미지와 동일한 이름을 가진 .usdz 소스(3D 모델)을 </br>
 사용자의 터치 지점을 실제 세계의 위치로 변환하고, 그 위치에 가장 가까운 평면을 감지하는 데 사용되는 `raycast`을 통해 </br>
@@ -99,7 +96,16 @@ func fetchPokemonNames() {
         }
     }
 ```
-### ScreenShot
+
+### Used Technologies
+- `SwiftUI`
+- `ARKit`
+- `RealityKit`
+- `Firebase`
+### Used Libraries
+- `SDWebImageSwiftUI`
+
+## ScreenShot
 <img src = "https://github.com/tv1039/RealityModelerAR/assets/62321931/1d3864de-5b82-4c98-8053-48ca6271db80" width = "200px"> 
 <img src = "https://github.com/tv1039/RealityModelerAR/assets/62321931/965f4903-b9a4-4d55-8483-d1e33a0d6218" width = "200px"> 
 
