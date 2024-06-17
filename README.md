@@ -97,7 +97,7 @@ func fetchPokemonNames() {
     }
 ```
 
-### Used Technologies
+### Technologies Used
 - `SwiftUI`
 - `Combine`
 - `ARKit`
